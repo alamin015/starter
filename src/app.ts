@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
-import notFoundErrorHandler from './app/utils/notFoundErrorHndler';
-import globalErrorHandler from './app/utils/globalErrorHandler';
+import globalErrorHandler from './app/middleware/globalErrorHandler';
+import notFoundErrorHandler from './app/middleware/notFoundErrorHndler';
 const app: Application = express();
 
 // parser
